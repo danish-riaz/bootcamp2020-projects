@@ -1,0 +1,47 @@
+.dashBoard p,
+.dashBoard h1 {
+  margin-bottom: 0;
+  margin-top: 0px;
+}
+.dashBoard p {
+  font-size: 14px;
+}
+.dashBoardInnerContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  margin-top: 16px;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.dashBoardInnerContainer h2 {
+  margin: 4px 0 0 0;
+}
+#income {
+  color: #36d90d;
+}
+#expense {
+  color: red;
+}
+#dashboardDivider {
+  border-left: 2px solid;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .dashBoardInnerContainer {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  #dashboardDivider {
+    border-top: 2px solid;
+    border-left: none;
+    margin-top: 12px;
+  }
+  #expense {
+    margin-top: 12px;
+  }
+}
